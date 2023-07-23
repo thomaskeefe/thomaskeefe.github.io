@@ -1,0 +1,259 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+:root {
+  --blue:  #0366d6;
+}
+
+.youtube-player { display: block; margin: 0 auto; }
+
+blockquote {
+  margin-left: 25px;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }*/
+
+p { margin: 1em 0; }
+
+a         { color: var(--blue); }
+a:hover   { color: var(--blue); }
+a:visited { color: var(--blue); }
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+@media screen and (max-device-width: 480px){
+  body { -webkit-text-size-adjust: 100%; }
+}
+---
+---
+/* body {
+  background-image: url('background.png');
+  background-size: cover;
+  max-width: -webkit-calc(200px - (30px * 2));
+  max-width: calc(200px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+header {
+  background-image: url('background.png');
+  background-size: cover;
+} 
+*/
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+
+
+.news {
+  border:0;
+  table-layout:auto;
+}
+
+/* .bgSizeCover {
+  background-image: url('background.png');
+  background-size: cover;
+  width: 160px;
+  height: 160px;
+  border: 2px solid;
+  color: pink;
+  resize: both;
+  overflow: scroll;
+} */
+
+.date {
+  border: 0px;
+  color: #000;
+  min-width:7em;
+  width:auto;
+  padding: 2px 0px 2px 0px;
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 16px;
+  word-spacing: 0;
+}
+
+.description {
+  border: 0px;
+  padding: 10px;
+  vertical-align: top;
+  width:100%;
+  padding: 2px 0px 2px 0px;
+  text-align: left;
+}
+
+.description p {
+  padding:0;
+  margin:0;
+}
+
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+  margin-left: 0em;
+}
+
+ul.posts li {
+  line-height: 1.5em;
+}
+
+code {
+  font-family: 'Inconsolata', sans-serif;
+  font-size: medium;
+}
+
+ul.posts span {
+  color: var(--default-font-color);
+  font-family: 'Inconsolata', sans-serif;
+}
+
+.site .meta {
+  color: #aaa;
+}
+
+
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+#post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding-left: .4em;
+  overflow-x: auto;
+}
+
+#post ul, #post ol {
+  margin-left: 1.35em;
+}
+
+#post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+}
+
+#post pre code {
+  border: none;
+}
+
+/* terminal */
+#post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+#post pre.terminal code {
+  background-color: #333;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  width: 50%;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.site .footer {
+  margin-top: 30px;
+  padding-top: 5px;
+}
+
+.site .content .banner {
+  padding-bottom: 20px;
+}
+
+.site .content .banner .photo {
+  float: left;
+  margin-right: 30px;
+}
+.site .content .banner .photo > img
+{
+  border-radius: 50%;
+}
+
+.new {
+  padding-bottom: 30px;
+  border-bottom: 4px solid #eee;
+}
+
+.citation {
+  font-style: italic;
+  background-color: yellow;
+}
+
+.citation::before {
+    content: "[";
+}
+
+.citation::after {
+    content: "]";
+}
+
+ul, ol {
+  margin-left: 1.35em;
+}
+
+#refs {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.publications
+{
+  line-height: 1.3em;
+  text-align: left;
+}
+
+.teaching
+{
+  line-height: 1.3em;
+  text-align: left;
+}
+
+.homecontent
+{
+  padding-top: 20px;
+}
+
+.highlight {
+  background-color: rgb(240, 240, 240);
+  padding:6px;
+}
+
+.edit-link {
+  float:right;
+}

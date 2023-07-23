@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body>
+        <div class="container">
+            <div class="site">
+                {% include header.html %}
+                <div class="content">
+                    <div class="post"> 
+                        <p class="title"> {{ page.title }} </p>
+                        <p class="date"> {{ page.date | date_to_string }} </p>
+                        <div class="text"> 
+                            {{ content }} 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div> 
+            </div>
+        </div>
+    </body>
+</html>

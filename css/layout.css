@@ -1,0 +1,270 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Color Scheme */
+:root {
+    /*UW Scheme 
+    --primary-bg-color: #4b2e84;
+    --primary-font-color: white;
+    --secondary-bg-color: #b8860b;
+    --secondary-font-color: white;
+    --default-bg-color: white;
+    --default-font-color: black;
+    --whitespace-color: #e5e5e5; */
+
+    /* Yellow Blue Grey Scheme 
+    --primary-bg-color: #14213D;
+    --primary-font-color: white;
+    --secondary-bg-color: #FCA311;
+    --secondary-font-color:black;
+    --default-bg-color:white;
+    --default-font-color:black; 
+    --whitespace-color: #e5e5e5; */
+
+    /* White theme */
+    --primary-bg-color: white;
+    --primary-font-color: black;
+    --secondary-bg-color: white;
+    --secondary-font-color:black;
+    --default-bg-color:white;
+    --default-font-color:black; 
+    --whitespace-color: white; 
+
+    --blue:  #0366d6;
+    --link-color: var(--blue);
+
+    --default-font-family: 'Freight Sans Book', sans-serif;
+    --default-font-size: 18px;
+
+    /* h2 */
+    --title-font-family: 'Freight Sans Semibold', sans-serif; 
+    --title-font-size: 32px;
+
+    /* h3 */
+    --sub-title-font-family: 'Freight Sans Semibold', sans-serif;
+    --sub-title-font-size: 24px;
+
+    /* navbar */
+    --navbar-font-size: 20px;
+    --navbar-font-family: 'Helvetica Neue', sans-serif; 
+    --navbar-default-bg-color: white;
+    --navbar-default-font-color: black;
+    --navbar-hover-bg-color: white;
+    --navbar-hover-font-color: var(--blue);
+
+    /* name */
+    --name-font-family: 'Raph Lanok Future', sans-serif;
+    --name-font-size: 42px;
+}
+
+
+html { height: fit-content; }
+
+body {
+    font-family: var(--default-font-family);
+    background-image: url('alta_bg.jpg');
+    background-size: cover;
+    color:var(--default-font-color);
+    font-size: var(--default-font-size);
+    word-spacing: 0em;
+    min-width: 100%;
+}
+
+header {
+  /* background-image: url('background.png');
+  background-size: cover; */
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+.container {
+    /* dimensions */
+    /* max-width */
+    max-width: 750px;
+    margin: auto;
+    /* can use both container padding and site padding to accomplish same thing. -THK*/
+    /* padding: 100px; */
+}
+
+/* .bgSizeCover {
+  background-image: url('background.png');
+  background-size: contain;
+
+  width: 160px;
+  height: 160px;
+
+  border: 2px solid;
+  color: white;
+  resize: horizontal;
+  overflow: scroll;
+} */
+
+/* Site */
+.site { 
+    padding: 1em 0em 1em 0em;
+    margin: auto;
+    /* font display */
+    text-align: justify;
+    line-height: 1.5em; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 2px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Content */
+.site .content {
+    /* this is the padding for the main text area -THK */
+    padding: 1em 2.5em 1em 2.5em; 
+    background-color: var(--default-bg-color);
+    color: var(--default-font-color);
+    font-size: var(--default-font-size);
+}
+
+/* Header */
+.site .header {
+    padding: 0em;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-font-color);
+}
+
+.site .header .name {
+    font-family: var(--name-font-family);
+    font-size: var(--name-font-size);
+    font-weight: 400;
+    margin: 1em 0em 0.5em 0em;
+}
+
+  
+/* Navbar */
+.navbar {
+    font-family: var(--navbar-font-family);
+    font-size: 18px; 
+    background-color: var(--navbar-default-bg-color);
+    /* background-color: black; */
+    color: var(--navbar-default-font-color);
+    width: 100%;
+    overflow-x:auto;
+    overflow:hidden;
+    margin:0;
+    /* I adjusted the padding here. -THK */
+    padding: 1em 0em 1em 0em;
+}
+
+.navbar li {
+    /* This is padding in between the navbar border and the nav buttons. -THK */
+    padding: 0.5em 2.5em 0.5em 2.5em;
+    /* background-color:blueviolet; */
+    display:inline;
+}
+
+.navbar-icon {
+    display:none;
+    color: black;
+    float:right;
+}
+
+.navbar li a.extra {
+    /* this is padding between the nav button border and the text inside.  */
+    padding: 1em 1em 1em 1em;
+}
+  
+.navbar li a.active { 
+    border-top-color: var(--navbar-default-bg-color);
+    border-bottom-color: var(--navbar-default-bg-color);
+    background-color: var(--navbar-default-bg-color);
+    color: var(--navbar-default-font-color); 
+}
+
+.navbar li a {
+    background-color: var(--navbar-default-bg-color);
+    color: var(--navbar-default-font-color); 
+}
+
+.navbar li a:visited {
+    background-color: var(--navbar-default-bg-color);
+    color: var(--navbar-default-font-color); 
+}
+
+.navbar li a:hover {
+    background-color: var(--navbar-hover-bg-color);
+    color: var(--navbar-hover-font-color); 
+}
+
+/* Footer */
+.footer {
+    font-size: var(--default-font-size);
+    margin-top: 1em;
+    text-align: center;
+    margin: auto;
+}
+
+
+.post .title {
+    font-family: 'Freight Sans Semibold', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.post .date {
+    font-family: var(--default-font-family);
+    font-size: var(--default-font-size);
+    margin-top:5px;
+    margin-bottom:10px;
+    color:gray;
+}
+
+.post .text {
+    padding-top:5px;
+}
+
+/* default text */
+
+h2 {
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    padding-bottom: 15px;
+}
+
+h3 {
+    font-family: var(--sub-title-font-family);
+    font-size: var(--sub-title-font-size);
+    padding-bottom: 10px;
+}
+
+h7 {
+    font-family: var(--sub-title-font-family);
+    font-size: var(--sub-title-font-size);
+    padding-bottom: 10px;
+}
+
+.icon {
+    height: 24px;
+    width: 24px;
+    padding: 0.2em;
+}
+
+b {
+    font-family: 'Freight Sans Medium', sans-serif;
+}
