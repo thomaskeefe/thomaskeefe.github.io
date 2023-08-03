@@ -34,7 +34,7 @@ permalink:
     </p>
     <p>
         <h3>Research Interests</h3>
-        I work on methods to help scientists understand the structure in high-dimensional and complex datasets. This work includes statistics, machine learning, clustering, multivariate analysis, and data integration. 
+        I work on methods to help scientists understand the structure in high-dimensional and complex datasets, often motivated by the <a href="https://doi.org/10.1002/bimj.201300072">object-oriented data analysis</a> framework. This research includes statistics, machine learning, clustering, Bayesian methods, multivariate analysis, and data integration. 
     </p>
     <p>
         <h3>Teaching</h3>
