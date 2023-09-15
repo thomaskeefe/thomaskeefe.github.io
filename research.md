@@ -34,7 +34,7 @@ It is a "full Bayes" approach in that every parameter in the model has a prior; 
 Clustering is a large topic within machine learning, with many algorithms available and applications in diverse scientific areas. However, there are few methods for statistically determining if the clusters are "really there" or if they represent a noise aspect in the sample at hand. 
 The <a href="https://www.tandfonline.com/doi/abs/10.1198/016214508000000454">SigClust</a> methodology is one approach that has been useful in validating clusters, but it fails in the important case when the clusters of interest are of very unbalanced sizes, such as in the case of rare subtypes of disease.
 We develop a method that is statistically powerful in both the balanced and unbalanced regimes, using a novel measure of cluster quality that accounts for cluster size. 
-A manuscript is in prepration for submission to the <i>Journal of Computational and Graphical Statistics</i>.
+The preprint is available <a href="https://arxiv.org/abs/2308.13079">here</a>.
 <br><br>
 
 <h3>Patterns of variation among baseline femoral and tibial cartilage thickness and clinical features</h3>
